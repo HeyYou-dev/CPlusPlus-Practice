@@ -38,7 +38,9 @@ int SecondSmallestNumber(int array[], int size)
     return second;
 }
 
-/* Over all TM O(n) to find both minimum and secondminimum element in the array
+/* 
+
+Over all TM O(n) to find both minimum and secondminimum element in the array
 
 Any Alternative solution ?=>Yes
 
