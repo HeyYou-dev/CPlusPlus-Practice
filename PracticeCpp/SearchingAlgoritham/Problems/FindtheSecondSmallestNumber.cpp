@@ -37,3 +37,17 @@ int SecondSmallestNumber(int array[], int size)
     }
     return second;
 }
+
+/* Over all TM O(n) to find both minimum and secondminimum element in the array
+
+Any Alternative solution ?=>Yes
+
+what ? => Selection Sort
+
+How ?=> In each pass of selection sort,  minimum element will be positioned at correct index  
+        so to find the second smallest element , we need two pass of selection sort .
+        then return array[1] . Because array[1] will contain second smallest element 
+
+        Similier behaviour goes with bubble sort but there case would be maximum element
+
+*/
