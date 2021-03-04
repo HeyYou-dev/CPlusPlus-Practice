@@ -9,7 +9,7 @@ using namespace std;
 int MissingNumber(int[], int);
 int main(int argc, char **argv)
 {
-    int array[] = {5, 4, 2, 1};
+    int array[] = {3, 6, 4, 2, 1};
     int size = sizeof(array) / sizeof(array[0]);
     cout << "Missing Number is = " << MissingNumber(array, size);
     return 0;
@@ -17,15 +17,15 @@ int main(int argc, char **argv)
 
 int MissingNumber(int array[], int size)
 {
-    int localArr[5] = {0, 0, 0, 0, 0};
+    int localArr[] = {0, 0, 0, 0, 0, 0};
 
     for (int i; i < size; i++)
     {
-        localArr[array[i] % 5] = 1;
+        localArr[array[i] % 6] = 1;
     }
     int j = 0;
 
-    for (int j = 0; j < 5; j++)
+    for (int j = 0; j < 6; j++)
     {
         if (localArr[j] == 0)
         {
